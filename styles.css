@@ -1,0 +1,70 @@
+html {
+    background: linear-gradient(white, skyblue);
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: blue;
+}
+body {
+    
+    margin: 0 auto;
+    width: auto;
+    padding: 0 20px 20px 20px;
+    font-family: cursive;
+}
+
+body .main-container {
+    margin: 50px;
+    padding: 50px;
+    background-color: yellow rgb(139, 139, 139);
+    border-radius: 10px;
+    border: 0.5px solid rgb(53, 53, 53);
+}
+
+#text {
+    margin: 50px;
+    padding: 50px;
+    background-color: #a8a8a8;
+    border-radius: 10px;
+}
+
+.avatar {
+    align-self: flex-start;
+    margin: 10px;
+    width: 300px;
+}
+
+#button {
+    background-color: #00539f;
+    color: white;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    border: none;
+}
+#photo {
+    margin: 0;
+    padding: 0;
+display: flex;
+border: none;
+align-items: center;
+}
+.text10 {
+    align-self: center;
+    margin-bottom: 100px;
+}
+#arbuz {
+    width: 35px;
+    height: auto;
+}
+.socials {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
