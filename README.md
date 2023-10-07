@@ -1,64 +1,78 @@
-The objective of this assignment is to reinforce your understanding of inheritance in Java by creating a base class and three derived classes to model different types of devices. You will also practice generating random instances of these devices, calculating total prices, and managing class hierarchies.
+TIn this assignment, students will explore object-oriented programming concepts such as abstract classes, inheritance, and polymorphism by creating a set of classes representing different geometric shapes. They will implement abstract methods to calculate the area and perimeter of each shape and use these classes to create interactive user interfaces to calculate and display these properties for various shapes.
 
-1. Base Class - Device:
+Instructions:
 
-   - Create a base class named "Device".
+1. Shape class 
 
-   - Include the following attributes:
+Create an abstract class called "Shape" with the following attributes and methods:
 
-     - "type" (String) - Represents the type of the device (e.g., "Smartphone," "Laptop," "Tablet," etc.).
+   - Attributes:
 
-     - "price" (double) - Represents the price of the device in USD.
+     - `name` (String): A variable to store the name of the shape.
 
-     - "weight" (double) - Represents the weight of the device in grams.
+   - Abstract Methods:
 
-   - Implement a parameterized constructor to initialize these attributes.
+     - `double getArea()`: An abstract method that calculates and returns the area of the shape.
 
-   - Implement getters and setters for all attributes.
+     - `double getPerimeter()`: An abstract method that calculates and returns the perimeter of the shape.
 
-2. Derived Classes:
+2. Rectangle class 
 
-   - Create three derived classes, each representing a specific type of device (e.g., "Smartphone", "Laptop", "Tablet").
+Create a class called "Rectangle" that extends the "Shape" class. The "Rectangle" class should have the following attributes and methods:
 
-   - Each derived class should inherit from the "Device" class and have additional attributes and methods that are specific to that type of device. For example, a "Smartphone" class may have attributes like "screenSize" and "cameraResolution".
+   - Attributes:
 
-3. Main Program:
+     - `width` (double): The width of the rectangle.
 
-   - In the main program, ask the user to input the number of devices they want to create (a number between 1 and 20).
+     - `height` (double): The height of the rectangle.
 
-   - Generate random instances of the derived classes with different types and prices for the specified number of devices.
+   - Implement the `getArea()` and `getPerimeter()` methods for rectangles.
 
-   - Calculate and display the following information:
+3. Circle class
 
-     - The number of distinct device types created.
+Create a class called "Circle" that extends the "Shape" class. The "Circle" class should have the following attributes and methods:
 
-     - The total price of all devices.
+   - Attributes:
 
-     - The total weight of all devices.
+     - `radius` (double): The radius of the circle.
 
+   - Implement the `getArea()` and `getPerimeter()` methods for circles.
 
+4. Triangle class
 
-Additional Tips:
+Create a class called "Triangle" that extends the "Shape" class. The "Triangle" class should have the following attributes and methods:
 
-- Use the "Random" class in Java to generate random values for prices, weights, and any other attributes you choose to add to the derived classes.
+   - Attributes:
 
-- Ensure proper encapsulation by using access modifiers (e.g., "private", "protected", "public") for class attributes.
+     - `side1`, `side2`, `side3` (double) - Represents the lengths of the triangle's sides.
 
-- Organize your code into packages for better structure and readability.
+   - Implement the `getArea()` and `getPerimeter()` methods for any kind of triangles.
 
-- Include meaningful comments and documentation for your classes and methods.
+5. Square class
 
+Create a class called "Square" that extends the "Rectangle" class. The "Square" class should inherit attributes and methods from the "Rectangle" class but should also implement a constructor that takes a single side length as an argument.
 
+6. Main class
+
+Implement a user interactive program that does the following:
+
+   - Allows the user to choose a shape type (Rectangle, Circle, Triangle or Square).
+
+   - Based on the selected shape type, prompt the user for the necessary dimensions (e.g., length, width, radius).
+
+   - Calculate and display the area and perimeter of the selected shape.
+
+   - Repeat the process until the user chooses to exit the program.
 
 Grading Criteria:
 
-Your assignment will be graded based on the following criteria:
+Students will be evaluated based on the following criteria:
 
-- Correct implementation of the base class and derived classes.
+- Correct implementation of abstract classes, inheritance, and polymorphism.
 
-- Proper usage of inheritance, constructors, and getters/setters.
+- Proper calculation of area and perimeter for each shape.
 
-- Accurate calculation of the total price and total weight.
+- User-friendly and error-handling interactive program.
 
 - Proper code organization, naming conventions, and documentation.
 
